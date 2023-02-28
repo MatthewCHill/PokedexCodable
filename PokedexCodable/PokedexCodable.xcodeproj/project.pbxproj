@@ -13,6 +13,7 @@
 		34CABE7729AE62E200A13758 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CABE7529AE62E200A13758 /* Main.storyboard */; };
 		34CABE7929AE62E400A13758 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34CABE7829AE62E400A13758 /* Assets.xcassets */; };
 		34CABE7C29AE62E400A13758 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34CABE7A29AE62E400A13758 /* LaunchScreen.storyboard */; };
+		34CABE8529AE652100A13758 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CABE8429AE652100A13758 /* Pokemon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		34CABE7829AE62E400A13758 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		34CABE7B29AE62E400A13758 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		34CABE7D29AE62E400A13758 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		34CABE8429AE652100A13758 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				34CABE7329AE62E200A13758 /* ViewController.swift */,
 				34CABE7529AE62E200A13758 /* Main.storyboard */,
 				34CABE7A29AE62E400A13758 /* LaunchScreen.storyboard */,
+				34CABE8429AE652100A13758 /* Pokemon.swift */,
 			);
 			path = PokedexCodable;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34CABE7429AE62E200A13758 /* ViewController.swift in Sources */,
+				34CABE8529AE652100A13758 /* Pokemon.swift in Sources */,
 				34CABE7029AE62E200A13758 /* AppDelegate.swift in Sources */,
 				34CABE7229AE62E200A13758 /* SceneDelegate.swift in Sources */,
 			);
