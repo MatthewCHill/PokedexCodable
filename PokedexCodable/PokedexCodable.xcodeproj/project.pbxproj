@@ -18,6 +18,7 @@
 		34CABE8F29AE689400A13758 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CABE8E29AE689400A13758 /* NetworkError.swift */; };
 		34CABE9129AE6DE100A13758 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CABE9029AE6DE100A13758 /* Constants.swift */; };
 		34CABE9329AE847000A13758 /* PokemonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CABE9229AE847000A13758 /* PokemonTableViewCell.swift */; };
+		34CABE9529AEEBC200A13758 /* PokemonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34CABE9429AEEBC200A13758 /* PokemonDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		34CABE8E29AE689400A13758 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		34CABE9029AE6DE100A13758 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		34CABE9229AE847000A13758 /* PokemonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTableViewCell.swift; sourceTree = "<group>"; };
+		34CABE9429AEEBC200A13758 /* PokemonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 			children = (
 				34CABE8929AE66F600A13758 /* PokedexTableViewController.swift */,
 				34CABE9229AE847000A13758 /* PokemonTableViewCell.swift */,
+				34CABE9429AEEBC200A13758 /* PokemonDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				34CABE9129AE6DE100A13758 /* Constants.swift in Sources */,
 				34CABE7229AE62E200A13758 /* SceneDelegate.swift in Sources */,
 				34CABE8D29AE677B00A13758 /* NetworkingController.swift in Sources */,
+				34CABE9529AEEBC200A13758 /* PokemonDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
