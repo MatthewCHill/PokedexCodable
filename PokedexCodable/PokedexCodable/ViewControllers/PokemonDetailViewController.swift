@@ -19,26 +19,36 @@ class PokemonDetailViewController: UIViewController {
         super.viewDidLoad()
         pokemonMovesTableView.dataSource = self
         pokemonMovesTableView.delegate = self
-      
+        
     }
     
     // MARK: - Properties
-    var pokemon: Pokemon?
+    var pokemon: Pokemon? {
+        didSet {
+            updateViews()
+        }
+    }
     
     // MARK: - Functions
     
-//    func updateViews(pokemon: Pokemon) {
-//        PokemonController.fetchImage(forPokemon: pokemon) { image in
-//            guard let image = image else {return}
-//            DispatchQueue.main.async {
-//                self.pokemon = pokemon
-//                self.pokemonSpriteImageView.image = image
-//                self.pokemonNameLabel.text = pokemon.name
-//                self.pokemonIDLabel.text = String(pokemon.id)
-//                self.pokemonMovesTableView.reloadData()
-//            }
-//        }
-//    }
+    func updateViews() {
+        guard let pokemon = pokemon else {return}
+        NetworkingController.fetchSprite(for: pokemon.sprites.frontShiny) { result in
+            switch result {
+                
+            case .success(let sprite):
+                DispatchQueue.main.async {
+                    self.pokemonSpriteImageView.image = sprite
+                    self.pokemonNameLabel.text = pokemon.name
+                    self.pokemonIDLabel.text = String(pokemon.id)
+                    self.pokemonMovesTableView.reloadData()
+                }
+                
+            case .failure(let error):
+                print("There was an error! \(error.errorDescription)")
+            }
+        }
+    }
     
 } // End of class
 
@@ -53,6 +63,10 @@ extension PokemonDetailViewController: UITableViewDataSource, UITableViewDelegat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "moveCell", for: indexPath)
         
+        let index = pokemon?.moves[indexPath.row]
+        var config = cell.defaultContentConfiguration()
+        config.text = index?.move.name
+        cell.contentConfiguration = config
         
         return cell
     }

@@ -63,7 +63,7 @@
                                     <outlet property="pokemonIdLabel" destination="12w-xZ-Fwj" id="M4x-a0-NG3"/>
                                     <outlet property="pokemonNameLabel" destination="kqi-bs-yjh" id="2Y3-Y4-R2q"/>
                                     <outlet property="pokemonSpriteImageView" destination="tgK-NO-Ik0" id="pBa-He-szz"/>
-                                    <segue destination="RtF-NJ-OAG" kind="show" id="cQ6-RO-PRX"/>
+                                    <segue destination="RtF-NJ-OAG" kind="show" identifier="toPokemonDetailVC" id="cQ6-RO-PRX"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
